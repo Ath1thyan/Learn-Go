@@ -63,4 +63,14 @@ func main() {
 	fmt.Println(timeElapsed5)
 	fmt.Println("-----------------------------")
 
+	benchmarkTime6 := time.Now()
+	// var s6, sep6 string
+	for i :=1; i < len(os.Args); i++ {
+		fmt.Println(i, os.Args[i])
+	}
+	time.Sleep(1 * time.Second)
+	timeElapsed6 := time.Since(benchmarkTime6)
+	fmt.Println(timeElapsed6)
+	fmt.Println("-----------------------------")
+
 }
